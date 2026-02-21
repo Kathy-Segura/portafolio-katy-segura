@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './scroll.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Tema Claro - Blanco, Celeste y Azul Marina */
+  --background: #F6FCFB;
+  --foreground: #122D30;
+  --card: #FFFFFF;
+  --card-foreground: #122D30;
+  --popover: #FFFFFF;
+  --popover-foreground: #122D30;
+  --primary: #122D30;
+  --primary-foreground: #F6FCFB;
+  --secondary: #C9F0EC;
+  --secondary-foreground: #122D30;
+  --muted: #E8F9F7;
+  --muted-foreground: #4A6B70;
+  --accent: #C9F0EC;
+  --accent-foreground: #122D30;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #D4F3ED;
+  --input: #E8F9F7;
+  --ring: #122D30;
+  --chart-1: #122D30;
+  --chart-2: #C9F0EC;
+  --chart-3: #87D8CC;
+  --chart-4: #5EC5B8;
+  --chart-5: #2B5D63;
+  --radius: 0.625rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #122D30;
+  --sidebar-primary: #122D30;
+  --sidebar-primary-foreground: #F6FCFB;
+  --sidebar-accent: #C9F0EC;
+  --sidebar-accent-foreground: #122D30;
+  --sidebar-border: #D4F3ED;
+  --sidebar-ring: #122D30;
+  
+  /* Gradientes Tema Claro */
+  --gradient-primary: linear-gradient(135deg, #F6FCFB 0%, #C9F0EC 100%);
+  --gradient-accent: linear-gradient(135deg, #C9F0EC 0%, #87D8CC 100%);
+}
+
+.dark {
+  /* Tema Oscuro - Negro, Azul Oscuro y Lila Intensificado */
+  --background: #24272D;
+  --foreground: #E8E8F0;
+  --card: #2D3038;
+  --card-foreground: #E8E8F0;
+  --popover: #2D3038;
+  --popover-foreground: #E8E8F0;
+  --primary: #8B7DCC;
+  --primary-foreground: #24272D;
+  --secondary: #5D50A0;
+  --secondary-foreground: #E8E8F0;
+  --muted: #3D3D47;
+  --muted-foreground: #A0A0B0;
+  --accent: #8B7DCC;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #3D3D47;
+  --input: #2D3038;
+  --ring: #8B7DCC;
+  --chart-1: #8B7DCC;
+  --chart-2: #5D50A0;
+  --chart-3: #9D8FDB;
+  --chart-4: #ADA0E8;
+  --chart-5: #6B5CA0;
+  --sidebar: #2D3038;
+  --sidebar-foreground: #E8E8F0;
+  --sidebar-primary: #8B7DCC;
+  --sidebar-primary-foreground: #24272D;
+  --sidebar-accent: #5D50A0;
+  --sidebar-accent-foreground: #E8E8F0;
+  --sidebar-border: #3D3D47;
+  --sidebar-ring: #8B7DCC;
+  
+  /* Gradientes Tema Oscuro - Intensificados con Lila */
+  --gradient-primary: linear-gradient(135deg, #1a1d23 0%, #2d2850 30%, #5D50A0 70%, #8B7DCC 100%);
+  --gradient-accent: linear-gradient(135deg, #9D8FDB 0%, #8B7DCC 50%, #5D50A0 100%);
+  --gradient-text: linear-gradient(135deg, #9D8FDB 0%, #8B7DCC 100%);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(194, 240, 236, 0.3);
+  }
+  
+  .dark .text-glow {
+    text-shadow: 0 0 20px rgba(98, 92, 152, 0.3);
+  }
+  
+  /* Patrón Cuadrícula tipo GitHub - Ligero tema claro */
+  .github-grid {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .github-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(rgba(18, 45, 48, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(18, 45, 48, 0.06) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    animation: gridShimmer 6s ease-in-out infinite;
+  }
+  
+  .dark .github-grid::before {
+    background-image: 
+      linear-gradient(rgba(123, 115, 196, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(123, 115, 196, 0.2) 1px, transparent 1px);
+  }
+  
+  /* Patrón de puntos interactivos */
+  .grid-dots {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-dots::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle, rgba(18, 45, 48, 0.08) 1px, transparent 1px);
+    background-size: 35px 35px;
+    pointer-events: none;
+    animation: dotsFloat 5s ease-in-out infinite;
+  }
+  
+  .dark .grid-dots::before {
+    background-image: radial-gradient(circle, rgba(123, 115, 196, 0.25) 1.5px, transparent 1.5px);
+    background-size: 35px 35px;
+  }
+  
+  .skill-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .skill-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(139, 125, 204, 0.3);
+  }
+  
+  /* Gradiente de texto para tema oscuro */
+  .text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .dark .text-gradient {
+    background: linear-gradient(135deg, #9D8FDB 0%, #8B7DCC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Heading con gradiente oscuro */
+  .heading-gradient {
+    background: linear-gradient(135deg, #8B7DCC 0%, #9D8FDB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

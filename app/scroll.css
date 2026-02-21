@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar personalizado para tema claro */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6FCFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9F0EC;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #87D8CC;
+}
+
+/* Scrollbar personalizado para tema oscuro */
+.dark ::-webkit-scrollbar-track {
+  background: #24272D;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #625C98;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #7B73B8;
+}
+
+/* Animaciones para patrones */
+@keyframes gridShimmer {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes dotsFloat {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}
