@@ -46,44 +46,62 @@
 }
 
 .dark {
-  /* Tema Oscuro - Negro, Azul Oscuro y Lila Intensificado */
-  --background: #24272D;
-  --foreground: #E8E8F0;
-  --card: #2D3038;
-  --card-foreground: #E8E8F0;
-  --popover: #2D3038;
-  --popover-foreground: #E8E8F0;
-  --primary: #8B7DCC;
-  --primary-foreground: #24272D;
-  --secondary: #5D50A0;
-  --secondary-foreground: #E8E8F0;
-  --muted: #3D3D47;
-  --muted-foreground: #A0A0B0;
-  --accent: #8B7DCC;
+  /* Tema Oscuro - Negro dominante con Lila intenso */
+  --background: #000000;
+  --foreground: #EDE9FE;
+  --card: #111111;
+  --card-foreground: #EDE9FE;
+  --popover: #111111;
+  --popover-foreground: #EDE9FE;
+  --primary: #7C3AED; /* Lila vibrante */
+  --primary-foreground: #FFFFFF;
+  --secondary: #4C1D95; /* Lila profundo */
+  --secondary-foreground: #EDE9FE;
+  --muted: #1A1A1A;
+  --muted-foreground: #B4B4C6;
+  --accent: #6D28D9;
   --accent-foreground: #FFFFFF;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #3D3D47;
-  --input: #2D3038;
-  --ring: #8B7DCC;
-  --chart-1: #8B7DCC;
-  --chart-2: #5D50A0;
-  --chart-3: #9D8FDB;
-  --chart-4: #ADA0E8;
-  --chart-5: #6B5CA0;
-  --sidebar: #2D3038;
-  --sidebar-foreground: #E8E8F0;
-  --sidebar-primary: #8B7DCC;
-  --sidebar-primary-foreground: #24272D;
-  --sidebar-accent: #5D50A0;
-  --sidebar-accent-foreground: #E8E8F0;
-  --sidebar-border: #3D3D47;
-  --sidebar-ring: #8B7DCC;
-  
-  /* Gradientes Tema Oscuro - Intensificados con Lila */
-  --gradient-primary: linear-gradient(135deg, #1a1d23 0%, #2d2850 30%, #5D50A0 70%, #8B7DCC 100%);
-  --gradient-accent: linear-gradient(135deg, #9D8FDB 0%, #8B7DCC 50%, #5D50A0 100%);
-  --gradient-text: linear-gradient(135deg, #9D8FDB 0%, #8B7DCC 100%);
+  --border: #1F1F1F;
+  --input: #141414;
+  --ring: #7C3AED;
+  --chart-1: #7C3AED;
+  --chart-2: #6D28D9;
+  --chart-3: #5B21B6;
+  --chart-4: #4C1D95;
+  --chart-5: #2E1065;
+  --sidebar: #0F0F0F;
+  --sidebar-foreground: #EDE9FE;
+  --sidebar-primary: #7C3AED;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #4C1D95;
+  --sidebar-accent-foreground: #EDE9FE;
+  --sidebar-border: #1F1F1F;
+  --sidebar-ring: #7C3AED;
+
+  /* =========================
+     NUEVOS GRADIENTES OSCUROS
+     Negro dominante + Lila izquierda
+  ========================= */
+
+  --gradient-primary: linear-gradient(
+    to right,
+    #2E1065 40%,
+    #000000 85%
+  );
+
+  --gradient-accent: linear-gradient(
+    to right,
+    #4C1D95 50%,
+    #000000 100%
+  );
+
+  --gradient-text: linear-gradient(
+    to right,
+    #A78BFA 0%,
+    #7C3AED 100%
+  );
 }
 
 @theme inline {

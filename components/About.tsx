@@ -60,7 +60,7 @@ export function About() {
         {/* Section Header */}
         <div className="text-center space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold text-primary dark:heading-gradient">Sobre mí</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-secondary via-secondary to-transparent dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-transparent mx-auto rounded-full"></div>
+          <div className="w-16 h-1 bg-linear-to-r from-secondary via-secondary to-transparent dark:from-[#5b45ba] dark:via-[#7f68e6] dark:to-transparent mx-auto rounded-full"></div>
         </div>
 
         {/* Brief Description */}
@@ -86,7 +86,7 @@ export function About() {
                   className="p-6 rounded-xl bg-card border border-border hover:border-secondary/50 transition-all hover:shadow-lg group"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-secondary/20 group-hover:bg-secondary/30 transition-colors flex-shrink-0">
+                    <div className="p-3 rounded-lg bg-secondary/20 group-hover:bg-secondary/30 transition-colors shrink-0">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -113,7 +113,7 @@ export function About() {
               return (
                 <div
                   key={skill.category}
-                  className="p-8 rounded-xl bg-gradient-to-br from-card to-card/50 border border-border hover:border-secondary/50 transition-all hover:shadow-xl group"
+                  className="p-8 rounded-xl bg-linear-to-br from-card to-card/50 border border-border hover:border-secondary/50 transition-all hover:shadow-xl group"
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <div className="p-3 rounded-lg bg-secondary/20 group-hover:bg-secondary/30 transition-colors">

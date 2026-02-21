@@ -8,7 +8,7 @@ const geist = Geist({ subsets: ["latin"], variable: '--font-geist' });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: '--font-geist-mono' });
 
 export const metadata: Metadata = {
-  title: 'Dev Portfolio - Ingeniero en Sistemas',
+  title: 'Portfolio - Ingeniero en Sistemas',
   description: 'Portafolio profesional especializado en Backend y Desarrollo Móvil',
   generator: 'v0.app',
   icons: {

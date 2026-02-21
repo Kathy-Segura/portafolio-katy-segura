@@ -18,7 +18,7 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0] bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold bg-linear-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0] bg-clip-text text-transparent">
               Dev Portfolio
             </h3>
             <p className="text-foreground/70">

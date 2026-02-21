@@ -24,13 +24,13 @@ export function ProjectCard({
   return (
     <div className="group rounded-xl overflow-hidden border border-border hover:border-secondary/50 transition-all hover:shadow-xl bg-card">
       {/* Image */}
-      <div className="relative h-48 sm:h-56 bg-gradient-to-br from-secondary/20 to-secondary/5 overflow-hidden">
+      <div className="relative h-48 sm:h-56 bg-linear-to-br from-secondary/20 to-secondary/5 overflow-hidden">
         <img
           src={image}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       </div>
 
       {/* Content */}

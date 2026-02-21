@@ -22,7 +22,7 @@ export function Header() {
         {/* Logo */}
         <a
           href="#hero"
-          className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0] bg-clip-text text-transparent"
+          className="text-2xl font-bold bg-linear-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0] bg-clip-text text-transparent"
         >
           Dev Portfolio
         </a>

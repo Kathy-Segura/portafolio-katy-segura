@@ -26,7 +26,7 @@ export function Hero() {
         <div className="space-y-4">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance leading-tight text-primary dark:text-gradient">
             Ingeniero en Sistemas
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0]">
+            <span className="block text-transparent bg-clip-text bg-linear-to-r from-primary via-secondary to-primary dark:from-[#9D8FDB] dark:via-[#8B7DCC] dark:to-[#5D50A0]">
               Backend & Móvil
             </span>
           </h1>
