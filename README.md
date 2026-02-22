@@ -1,6 +1,6 @@
 # Portafolio - Ingeniero en Sistemas
 
-Un portafolio moderno, responsivo y profesional para un estudiante de Ingeniería en Sistemas especializado en **Backend** y **Desarrollo Móvil**.
+Portafolio moderno, responsivo y profesional para un estudiante de Ingeniería en Sistemas especializado en **Backend** y **Desarrollo Móvil**.
 
 ## 🎨 Características
 
@@ -82,66 +82,6 @@ Un portafolio moderno, responsivo y profesional para un estudiante de Ingenierí
   └── profile-avatar.jpg   # Avatar del perfil
 ```
 
-## 🎯 Personalización
-
-### Cambiar los datos personales
-
-1. **Header.tsx**: Actualizar logo y nombre
-2. **Hero.tsx**: Cambiar nombre, título y descripción
-3. **About.tsx**: Actualizar skills y descripción personal
-4. **Education.tsx**: Agregar educación, certificaciones y experiencia
-5. **Projects.tsx**: Agregar tus proyectos reales
-6. **Contact.tsx**: Actualizar información de contacto y email
-
-### Cambiar colores
-
-Edita `/app/globals.css` para personalizar los colores:
-
-```css
-:root {
-  /* Tema Claro */
-  --background: #F6FCFB;
-  --primary: #122D30;
-  --secondary: #C9F0EC;
-}
-
-.dark {
-  /* Tema Oscuro */
-  --background: #24272D;
-  --primary: #625C98;
-  --secondary: #3D387B;
-}
-```
-
-## 🚀 Instalación y Ejecución
-
-### Requisitos
-- Node.js 18+
-- pnpm (recomendado)
-
-### Pasos
-
-1. Clonar o descargar el proyecto
-```bash
-git clone <repository-url>
-cd portfolio
-```
-
-2. Instalar dependencias
-```bash
-pnpm install
-```
-
-3. Ejecutar servidor de desarrollo
-```bash
-pnpm dev
-```
-
-4. Abrir en navegador
-```
-http://localhost:3000
-```
-
 ## 📱 Responsive Design
 
 El portafolio es completamente responsivo:
@@ -172,14 +112,3 @@ El portafolio incluye soporte completo para tema oscuro:
 - CSS purificado con Tailwind
 - Lazy loading de componentes
 
-## 📝 Licencia
-
-Este proyecto es de código abierto y está disponible para uso educativo y personal.
-
-## 🤝 Contribuciones
-
-Si deseas mejorar este portafolio, siéntete libre de hacer pull requests.
-
----
-
-Hecho con ❤️ para estudiantes de Ingeniería en Sistemas
