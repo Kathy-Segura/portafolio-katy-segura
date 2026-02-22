@@ -41,8 +41,8 @@
   --sidebar-ring: #122D30;
   
   /* Gradientes Tema Claro */
-  --gradient-primary: linear-gradient(135deg, #F6FCFB 0%, #C9F0EC 100%);
-  --gradient-accent: linear-gradient(135deg, #C9F0EC 0%, #87D8CC 100%);
+  --gradient-primary: linear-gradient(to right, #ecf0f0 10%, #72d5cb 100%);
+  --gradient-accent: linear-gradient(to right, #fafffe 10%, #e1e4e4 100%);
 }
 
 .dark {

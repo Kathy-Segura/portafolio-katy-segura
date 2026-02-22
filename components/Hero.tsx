@@ -12,7 +12,7 @@ export function Hero() {
         {/* Avatar */}
         <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-secondary/50 shadow-lg">
           <img
-            src="/profile-avatar.jpg"
+            src="/katy.jpeg"
             alt="Perfil"
             className="w-full h-full object-cover"
           />
@@ -32,7 +32,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-foreground/80 text-balance max-w-2xl mx-auto leading-relaxed">
-            Apasionado por desarrollar soluciones robustas en backend y aplicaciones móviles innovadoras. Convirtiendo ideas en código de calidad.
+             Convirtiendo ideas en código de calidad.
           </p>
         </div>
 
@@ -56,21 +56,21 @@ export function Hero() {
         {/* Social Links */}
         <div className="flex gap-6 pt-8">
           <a
-            href="#"
+            href="#https://github.com/Kathy-Segura"
             className="p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors text-primary"
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="#"
+            href="#https://www.linkedin.com/in/katherine-s-segura-8050aa329/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3Bq85XFKntRgKAakRcZZzgdg%3D%3D"
             className="p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors text-primary"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="#"
+            href="#https://accounts.google.com/SignOutOptions?hl=es-419&continue=https://mail.google.com/mail/&service=mail&ec=GBRAFw"
             className="p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors text-primary"
             aria-label="Email"
           >
