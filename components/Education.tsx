@@ -6,9 +6,9 @@ export function Education() {
   const education = [
     {
       icon: GraduationCap,
-      title: 'Ingeniería en Sistemas',
-      institution: 'Universidad Principal',
-      period: '2021 - 2025 (Cursando)',
+      title: 'Ingeniería en Sistemas de Información',
+      institution: 'Universidad Nacional Autónoma de Nicaragua (UNAN-MANAGUA)',
+      period: '2022 - 2026 (Cursando)',
       description: 'Estudiante activo de Ingeniería en Sistemas con énfasis en desarrollo de software y arquitectura de sistemas.',
       subjects: ['Desarrollo Backend', 'Desarrollo Móvil', 'Bases de Datos', 'Algoritmos', 'Ingeniería de Software'],
     },

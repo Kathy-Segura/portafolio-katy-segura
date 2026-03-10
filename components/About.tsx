@@ -7,17 +7,17 @@ export function About() {
     {
       category: 'Backend',
       icon: Server,
-      technologies: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs', 'Microservicios'],
+      technologies: ['Node.js', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs'],
     },
     {
       category: 'Móvil',
       icon: Smartphone,
-      technologies: ['React Native', 'Flutter', 'Android Nativo', 'iOS (Swift)', 'Firebase', 'APIs REST'],
+      technologies: ['Android Studio', 'Jetpack Compose', 'Android Nativo', 'APIs REST'],
     },
     {
       category: 'Herramientas',
       icon: Code2,
-      technologies: ['TypeScript', 'Git', 'Docker', 'AWS', 'Linux', 'SQL', 'OOP', 'SOLID'],
+      technologies: ['TypeScript', 'Git', 'Docker', 'SQL', 'POO', 'SOLID'],
     },
   ];
 
