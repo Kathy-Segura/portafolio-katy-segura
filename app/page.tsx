@@ -21,7 +21,6 @@ export default function Home() {
       <Education />
       <Projects />
       <Contact />
-      <Footer />
     </main>
   );
 }
